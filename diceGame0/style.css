@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "inter", sans-serif;
+}
+.app {
+  background-color: yellow;
+  height: 80%;
+  width: 80%;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+}
+.player-0-area,
+.player-1-area {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.active {
+  background-color:greenyellow;
+}
+.top,
+.bottom {
+  height: 100px;
+  text-align: center;
+  padding: 20px;
+}
+.player-scr {
+  padding: 10px 20px;
+  border: 0;
+  background-color: white;
+  color: rgb(31, 57, 151);
+  font-size: 22px;
+  font-weight: 700;
+}
+h1 {
+  margin-bottom: 20px;
+}
+.center-field {
+  width: 15%;
+  position: absolute;
+  top: 0;
+  left: 42.5%;
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+img {
+  width: 62px;
+  height: 62px;
+}
+.up,
+.down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+button {
+  padding: 6px 20px;
+  border: 0;
+  background-color: rgb(66, 239, 104);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.hide {
+  display: none;
+}
+.winnerBox {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(247, 118, 38, 0.7);
+  pointer-events: stroke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
